@@ -81,5 +81,3 @@ end
 def farenheit_to_celcius(farenheit)
   return ((farenheit) -32) * 5/9
 end
-
-puts farenheit_to_celcius(100)

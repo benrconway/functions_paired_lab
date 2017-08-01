@@ -75,6 +75,11 @@ def volume_of_cube (length)
 end
 
 def volume_of_sphere(radius)
-  return 4/3.0 * Math::PI * (radius **3)
+  return (4.0/3.0 * Math::PI) * (radius **3)
 end
 
+def farenheit_to_celcius(farenheit)
+  return ((farenheit) -32) * 5/9
+end
+
+puts farenheit_to_celcius(100)

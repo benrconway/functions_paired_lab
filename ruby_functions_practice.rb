@@ -69,13 +69,17 @@ def number_to_short_month_name (month)
   month_name = number_to_full_month_name(month)
   return month_name[0..2]
 end
+# could also use month_name.slice(0,3)
+#month_name = number_to_full_month_name(month)
+#short_month_name = month_name.slice(0,3)
+#return short_month_name
 
 def volume_of_cube (length)
   return length ** 3
 end
 
 def volume_of_sphere(radius)
-  return (4.0/3.0 * Math::PI) * (radius **3)
+  return ( 4.0 / 3.0 ) * Math::PI * (radius ** 3)
 end
 
 def farenheit_to_celcius(farenheit)

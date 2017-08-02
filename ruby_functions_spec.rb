@@ -79,7 +79,12 @@ class Functions_Practice < MiniTest::Test
     radius = 2
     assert_equal(expected, volume_of_sphere(radius))
   end
-
+# to round decimal places use .round(2) {2 is the number of decimal places}
+# rounded = volume_of_sphere(radius).round(2)
+#assert_equal(expected, rounded)
+# Also: assert_in_delta(33.51, volume_of_sphere(radius), 0.001) -accuracy shown by decimal placement
+# 
+# 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
     expected = 37
